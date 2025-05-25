@@ -1,1 +1,111 @@
 @import "tailwindcss";
+
+
+/* A very basic reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+/* img, video, svg {
+  display: block; 
+  max-width: 100%;
+  height: auto; 
+} */
+
+input, button, textarea, select {
+  font: inherit; /* Inherit font from body */
+  border: none; /* Remove default borders */
+  background: none; /* Remove default backgrounds */
+  padding: 0; /* Remove default padding */
+  outline: none; /* Remove default outline on focus (often replaced with a custom one) */
+}
+
+/* Optional: Opinionated default for form elements to match box-sizing */
+/* This is often not included in a generic reset but is good practice */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  -webkit-appearance: none; /* For consistent styling across browsers */
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0; /* Remove default rounded corners */
+}
+
+
+
+/* custom styling with theme directives  */
+@theme {
+    --color-button-primary:blue;
+    --color-button-secondary:red;
+    --color-text-primary:rgb(46, 46, 46);
+    --color-text-secondary:rgb(76, 75, 75);
+
+
+    /* typography  */
+     --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 4rem);   /* 40px to 64px */
+    --font-size-h2: clamp(2rem, 1.3rem + 2.5vw, 3rem);   /* 32px to 48px */
+    --font-size-h3: clamp(1.75rem, 1.2rem + 2vw, 2.5rem); /* 28px to 40px */
+    --font-size-h4: clamp(1.5rem, 1.1rem + 1.5vw, 2rem);   /* 24px to 32px */
+    --font-size-h5: clamp(1.25rem, 1rem + 1vw, 1.75rem);   /* 20px to 28px */
+    --font-size-h6: clamp(1.125rem, 0.9rem + 0.75vw, 1.5rem); /* 18px to 24px */
+
+       /* Line heights */
+    --line-height-base: 1.6;
+    --line-height-heading: 1.2;
+}
+
+/* global styling for repetitiv elements  */
+@layer base{
+     h1 {
+    font-size: var(--font-size-h1);
+    line-height: var(--line-height-heading);
+  }
+
+  h2 {
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-heading);
+  }
+
+  h3 {
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-heading);
+  }
+
+  h4 {
+    font-size: var(--font-size-h4);
+    line-height: var(--line-height-heading);
+  }
+
+  h5 {
+    font-size: var(--font-size-h5);
+    line-height: var(--line-height-heading);
+  }
+
+  h6 {
+    font-size: var(--font-size-h6);
+    line-height: var(--line-height-heading);
+  }
+}
+
+
+/* component directive  is for defining reusable component-level styles. */
+/* @layer components{
+    .button{
+        @apply px-3 py-2 bg-black text-white rounded-lg cursor-pointer;
+    }
+} */
