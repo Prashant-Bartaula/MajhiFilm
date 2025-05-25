@@ -13,10 +13,54 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
+    <!-- fixed header -->
+    <header class="fixed py-[20px] sm:py-[70px] lg:py-0 flex items-center justify-between sm:justify-end top-0 left-0 bg-white w-full">
+      <nav class="px-4 sm:px-7 absolute z-100 top-0 right-0 py-[150px] lg:relative lg:py-0 lg:w-full lg:max-w-[1400px] lg:mx-auto">
+        <!-- navigation links -->
+        <ul class="flex flex-col gap-10 px-[100px] lg:px-0 text-nav-large lg:flex-row lg:text-nav lg:items-center lg:w-full lg:justify-between lg:gap-15 relative">
+          <li class="cursor-pointer">
+            <a href="#" class="font-nav ">Home</a>
+          </li>
+          <li class="cursor-pointer">
+            <a href="#" class="font-nav ">Home</a>
+          </li>
 
-    <div class="bg-red-400">
+          <!-- for center spacing autogrow container with logo -->
+          <div class="hidden lg:flex grow flex-center px-5 max-w-[80%]">
+            <a href="/" class="cursor-pointer flex-center">
+              <img
+                src="./assets/majhi-film.webp"
+                alt="logo"
+                class="w-1/2 min-w-[150px] max-w-[400px] h-auto object-cover"
+              />
+            </a>
+          </div>
 
-    </div>
+          <li class="cursor-pointer">
+            <a href="#" class="font-nav ">Home</a>
+          </li>
+          <li class="cursor-pointer">
+            <a href="#" class="font-nav ">Home</a>
+          </li>
+        </ul>
+
+        <!-- cross button  -->
+         <button class="absolute top-5 right-5 lg:hidden cursor-pointer" id="sidebar-close"><img src="./assets/cross-button.svg" alt="cross-button" class="w-15"></button>
+      </nav>
+
+      <!-- logo -->
+      <div
+        class=" relative sm:absolute sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2"
+      >
+        <a href="/" class="cursor-pointer">
+          <img src="./assets/majhi-film.webp" alt="logo" class="w-[150px] h-auto object-contain"/>
+        </a>
+      </div>
+
+      <!-- hamburger -->
+      <div class="lg:hidden relative cursor-pointer">asdas</div>
+    </header>
+
     <script src="script.js" type="module"></script>
   </body>
 </html>

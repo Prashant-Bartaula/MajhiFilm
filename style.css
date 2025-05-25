@@ -1,22 +1,34 @@
+/* for heading bold poppins, navigation, button text  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Vinyl&display=swap');
+/* for body text and subheadings */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Vinyl&display=swap');
+/* for body text  secondary*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Vinyl&display=swap');
 @import "tailwindcss";
-
 
 /* A very basic reset */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  margin:0;
-  padding:0;
+  /* margin: 0;
+  padding: 0; */
+}
+body, html{
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
 }
 
 /* img, video, svg {
@@ -25,7 +37,10 @@ a {
   height: auto; 
 } */
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit; /* Inherit font from body */
   border: none; /* Remove default borders */
   background: none; /* Remove default backgrounds */
@@ -46,32 +61,42 @@ select {
   border-radius: 0; /* Remove default rounded corners */
 }
 
-
-
 /* custom styling with theme directives  */
 @theme {
-    --color-button-primary:blue;
-    --color-button-secondary:red;
-    --color-text-primary:rgb(46, 46, 46);
-    --color-text-secondary:rgb(76, 75, 75);
+  --color-button-primary: blue;
+  --color-button-secondary: red;
+  --color-text-primary: rgb(46, 46, 46);
+  --color-text-secondary: rgb(76, 75, 75);
 
+  /* --- Font Families --- */
+  --font-heading: "Poppins", sans-serif; /* For all headings */
+  --font-body: "Inter", sans-serif; /* For general body text */
+  --font-nav:"Poppins", sans-serif;
 
-    /* typography  */
-     --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 4rem);   /* 40px to 64px */
-    --font-size-h2: clamp(2rem, 1.3rem + 2.5vw, 3rem);   /* 32px to 48px */
-    --font-size-h3: clamp(1.75rem, 1.2rem + 2vw, 2.5rem); /* 28px to 40px */
-    --font-size-h4: clamp(1.5rem, 1.1rem + 1.5vw, 2rem);   /* 24px to 32px */
-    --font-size-h5: clamp(1.25rem, 1rem + 1vw, 1.75rem);   /* 20px to 28px */
-    --font-size-h6: clamp(1.125rem, 0.9rem + 0.75vw, 1.5rem); /* 18px to 24px */
+  /* typography  */
+  --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 4rem); /* 40px to 64px */
+  --font-size-h2: clamp(2rem, 1.3rem + 2.5vw, 3rem); /* 32px to 48px */
+  --font-size-h3: clamp(1.75rem, 1.2rem + 2vw, 2.5rem); /* 28px to 40px */
+  --font-size-h4: clamp(1.5rem, 1.1rem + 1.5vw, 2rem); /* 24px to 32px */
+  --font-size-h5: clamp(1.25rem, 1rem + 1vw, 1.75rem); /* 20px to 28px */
+  --font-size-h6: clamp(1.125rem, 0.9rem + 0.75vw, 1.5rem); /* 18px to 24px */
 
-       /* Line heights */
-    --line-height-base: 1.6;
-    --line-height-heading: 1.2;
+  --text-nav:24px;
+  --text-nav-large:32px;
+
+  /* padding  */
+  --padding-large:50px;
+  --padding-medium:30px;
+  --padding-small:20px;
+
+  /* Line heights */
+  --line-height-base: 1.6;
+  --line-height-heading: 1.2;
 }
 
 /* global styling for repetitiv elements  */
-@layer base{
-     h1 {
+@layer base {
+  h1 {
     font-size: var(--font-size-h1);
     line-height: var(--line-height-heading);
   }
@@ -102,10 +127,13 @@ select {
   }
 }
 
-
 /* component directive  is for defining reusable component-level styles. */
 /* @layer components{
     .button{
         @apply px-3 py-2 bg-black text-white rounded-lg cursor-pointer;
     }
 } */
+
+  @utility flex-center{
+    @apply flex justify-center items-center;
+  }
