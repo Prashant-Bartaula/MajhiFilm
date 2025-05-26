@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', ()=>{
+    
+    const header=document.getElementById('header');
+
+    //force to send user to top of the page onload
+    scrollY!==0?header.classList.add('scrolled'):null;
+    window.scrollTo(0,0);
+
 
     //sidebar toggle script 
     document.querySelector('#hamburger').addEventListener('click', () => {
@@ -10,10 +17,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
     })
 
     //scroll view and hide animation 
-    const header=document.getElementById('header');
     let lastScroll=window.scrollY;
     window.addEventListener('scroll', () => {
-        console.log('i ran ')
         const currentScroll=window.scrollY;
         if(currentScroll > lastScroll && window.scrollY > 100){
             header.classList.add('scrolled', 'scrolled-to-top');

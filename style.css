@@ -157,17 +157,17 @@ select {
 
 
   /* custom css only styles  */
-  .scrolled{
-   transform: translateY(-100%);
-   opacity: 0;
-  }
   .scrolled-to-top #logo-img{
     transform: scale(.6);
     margin-top: 0;
   }
   .scrolled-to-top{
-   backdrop-filter: blur(60%);
-   background-color: rgb(0, 0, 0, .6);
+    backdrop-filter: blur(60%);
+    background-color: rgb(0, 0, 0, .6);
+  }
+  .scrolled{
+   transform: translateY(-100%);
+   opacity: 0;
   }
  
  

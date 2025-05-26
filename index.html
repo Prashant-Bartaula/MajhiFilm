@@ -94,14 +94,14 @@
 
 
         <!-- About us section  -->
-         <section class="px-x-large py-y-large max-w-[1600px] mx-auto">
+         <section class=" px-x-small lg:px-x-large py-y-large max-w-[1600px] mx-auto">
           <h1 class="text-center ">About us</h1>
 
-          <div class="flex flex-wrap mt-20">
+          <div class="flex flex-wrap gap-24 lg:gap-0 mt-20">
             <!-- image wrapper -->
-            <div class="relative justify-center items-center flex-1/2 px-8">
+            <div class="relative justify-center items-center h-min lg:flex-1/2 px-4 lg:px-8">
               <div class="relative flex items-center justify-center z-20">
-                <img src="./assets/about-us-image.jpg" alt="about-us" class="cursor-pointer hover:scale-120 transition duration-300 ease-in-out h-[90%] w-[90%] object-cover">
+                <img src="./assets/about-us-image.jpg" alt="about-us" class="cursor-pointer hover:scale-115 transition duration-300 ease-in-out h-[90%] w-[90%] object-cover">
               </div>
 
               <!-- edge hiding lines -->
@@ -114,9 +114,10 @@
             </div>
 
             <!-- content wrapper  -->
-            <div class="flex-1/2 max-h-[500px] overflow-hidden px-8">
+            <div class="lg:flex-1/2 px-4  lg:px-8">
               <!-- text wrapper  -->
-              <div>
+               <!-- overflow elipsis only work with text nowrap -->
+              <div class="max-h-[490px] overflow-hidden ">
                 <h4 class="font-body text-secondary break-all">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad repellat recusandae vero minus voluptates, labore minima, sint voluptate corporis natus vitae rerum quos a cumque consequuntur beatae. Nam, ratione nesciunt!
               </h4>
