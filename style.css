@@ -15,10 +15,16 @@
   padding: 0; */
 }
 body, html{
-  height: 100vh;
-  width: 100vw;
+  /* set min property instead of height for the main html and body */
+  min-height: 100vh;
+  min-width: 100vw;
   overflow-x: hidden;
+  overflow-y: scroll;
   scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  display: none;
 }
 
 ul,
@@ -65,8 +71,9 @@ select {
 @theme {
   --color-button-primary: blue;
   --color-button-secondary: red;
-  --color-text-primary: rgb(46, 46, 46);
-  --color-text-secondary: rgb(76, 75, 75);
+  --color-primary: #e7e6e6;
+  --color-secondary:#a7a7a7;
+  --color-button:blue;
 
   /* --- Font Families --- */
   --font-heading: "Poppins", sans-serif; /* For all headings */
@@ -74,24 +81,31 @@ select {
   --font-nav:"Poppins", sans-serif;
 
   /* typography  */
-  --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 4rem); /* 40px to 64px */
+  --font-size-h1: clamp(2.5rem, 1.5rem + 3vw, 4.2rem); /* 40px to 64px */
   --font-size-h2: clamp(2rem, 1.3rem + 2.5vw, 3rem); /* 32px to 48px */
   --font-size-h3: clamp(1.75rem, 1.2rem + 2vw, 2.5rem); /* 28px to 40px */
   --font-size-h4: clamp(1.5rem, 1.1rem + 1.5vw, 2rem); /* 24px to 32px */
   --font-size-h5: clamp(1.25rem, 1rem + 1vw, 1.75rem); /* 20px to 28px */
   --font-size-h6: clamp(1.125rem, 0.9rem + 0.75vw, 1.5rem); /* 18px to 24px */
 
-  --text-nav:24px;
-  --text-nav-large:32px;
+  --text-nav:16px;
+  --text-nav-large:24px;
+  --text-body:clamp(1.25rem, 1rem + 1vw, 1.75rem);
 
-  /* padding  */
-  --padding-large:50px;
-  --padding-medium:30px;
-  --padding-small:20px;
+  /* padding  x axis*/
+  --padding-x-large:50px;
+  --padding-x-medium:30px;
+  --padding-x-small:20px;
+
+  /* padding y-axis */
+  --padding-y-large:120px;
+  --padding-y-medim:60px;
 
   /* Line heights */
   --line-height-base: 1.6;
-  --line-height-heading: 1.2;
+  --line-height-heading: 1.1;
+
+
 }
 
 /* global styling for repetitiv elements  */
@@ -128,12 +142,32 @@ select {
 }
 
 /* component directive  is for defining reusable component-level styles. */
-/* @layer components{
-    .button{
-        @apply px-3 py-2 bg-black text-white rounded-lg cursor-pointer;
+@layer components{
+    .nav-link:hover{
+        @apply text-[#afafaf]
     }
-} */
+}
 
   @utility flex-center{
     @apply flex justify-center items-center;
   }
+  @utility header-content-clip-path{
+    clip-path: polygon(0 0, 100% 29%, 100% 100%, 0% 100%);
+  }
+
+
+  /* custom css only styles  */
+  .scrolled{
+   transform: translateY(-100%);
+   opacity: 0;
+  }
+  .scrolled-to-top #logo-img{
+    transform: scale(.6);
+    margin-top: 0;
+  }
+  .scrolled-to-top{
+   backdrop-filter: blur(60%);
+   background-color: rgb(0, 0, 0, .6);
+  }
+ 
+ 
