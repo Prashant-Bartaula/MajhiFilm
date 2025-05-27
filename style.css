@@ -13,6 +13,7 @@
   box-sizing: border-box;
   /* margin: 0;
   padding: 0; */
+  scroll-behavior: smooth;
 }
 body, html{
   /* set min property instead of height for the main html and body */
@@ -20,7 +21,7 @@ body, html{
   min-width: 100vw;
   overflow-x: hidden;
   overflow-y: scroll;
-  scroll-behavior: smooth;
+  background-color: #fffffc;
 }
 
 ::-webkit-scrollbar{
@@ -49,8 +50,7 @@ textarea,
 select {
   font: inherit; /* Inherit font from body */
   border: none; /* Remove default borders */
-  background: none; /* Remove default backgrounds */
-  padding: 0; /* Remove default padding */
+  cursor: pointer;
   outline: none; /* Remove default outline on focus (often replaced with a custom one) */
 }
 
@@ -69,11 +69,10 @@ select {
 
 /* custom styling with theme directives  */
 @theme {
-  --color-button-primary: blue;
-  --color-button-secondary: red;
   --color-primary: #e7e6e6;
   --color-secondary:#a7a7a7;
   --color-button:blue;
+  --color-achievement:#e6f0fa;
 
   /* --- Font Families --- */
   --font-heading: "Poppins", sans-serif; /* For all headings */
@@ -98,12 +97,16 @@ select {
   --padding-x-small:20px;
 
   /* padding y-axis */
-  --padding-y-large:120px;
+  --padding-y-large:110px;
   --padding-y-medim:60px;
 
   /* Line heights */
   --line-height-base: 1.6;
   --line-height-heading: 1.1;
+
+  /* custom breakpoint */
+  --breakpoint-custommd:800px;
+  --breakpoint-customlg:1100px;
 
 
 }
@@ -154,10 +157,13 @@ select {
   @utility header-content-clip-path{
     clip-path: polygon(0 0, 100% 29%, 100% 100%, 0% 100%);
   }
+  @utility image-card{
+    @apply h-fit shadow-md px-3 py-5 rounded-md flex flex-col  gap-4 w-full max-w-[300px] min-w-[200px] grow shrink cursor-pointer transition-all duration-300 ease-in-out hover:scale-105;
+  }
 
 
   /* custom css only styles  */
-  .scrolled-to-top #logo-img{
+  /* .scrolled-to-top #logo-img{
     transform: scale(.6);
     margin-top: 0;
   }
@@ -168,6 +174,17 @@ select {
   .scrolled{
    transform: translateY(-100%);
    opacity: 0;
-  }
+  } */
  
+  .custom-nav-links:hover > .custom-dropdown{
+    display: block;
+}
  
+@keyframes marquee {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
