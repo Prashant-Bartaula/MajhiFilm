@@ -1,3 +1,5 @@
+import {data} from './demodata.js';
+
 document.addEventListener('DOMContentLoaded', ()=>{
     
      const navbarWrapper = document.getElementById("navbar-item-wrapper");
@@ -17,7 +19,31 @@ document.addEventListener('DOMContentLoaded', ()=>{
         // !e.target.closest('#hamburger')// this will return true or false as per the element is sibling or child of #hamburger
     });
     
-    
+    const achievementDataButton=Array.from(document.getElementById('date-wrapper').children)
+
+    //default content display 
+    data.forEach(data=>{
+        if(data.id===document.getElementsByClassName('active-date')[0].id){
+            document.getElementById('achievement-content').textContent=data.description
+            document.getElementById('achievement-date').textContent=data.date
+        }
+    })
+    achievementDataButton.forEach(item=>{
+        item.addEventListener('click',()=>{
+            achievementDataButton.forEach(item=>{
+                item.classList.remove('active-date')
+            })
+            item.classList.add('active-date')
+
+            data.forEach(data=>{
+                if(data.id===item.id){
+                    document.getElementById('achievement-content').textContent=data.description
+                    document.getElementById('achievement-date').textContent=data.date
+                }
+            })
+           
+        })
+    });
     
     
     // const header=document.getElementById('header');
