@@ -98,7 +98,7 @@ select {
 
   /* padding y-axis */
   --padding-y-large:110px;
-  --padding-y-medim:60px;
+  --padding-y-medim:45px;
 
   /* Line heights */
   --line-height-base: 1.6;
@@ -214,9 +214,19 @@ select {
   transition:.25s linear;
   border-radius: 20px;
   object-position: top center;
+  filter:grayscale(20%);
 }
 .scroll-item:hover img{
   transform: scale(1.1);
   filter: grayscale(0%);
   cursor: pointer;
+}
+
+
+.tab-item.tab-active{
+  @apply bg-gray-100;
+}
+
+.news-item{
+  @apply flex gap-4 cursor-pointer hover:text-red-600 transition-all duration-150 ease-in shadow-sm border-[.5px] border-gray-400/10 rounded-lg;
 }

@@ -1,28 +1,28 @@
 export const data=[
     {
-        id:'date-1',
-        description:'मिति २०७९ पुष २ गते आदिवासी जनजाति chचलचित्र महासंघको पाचौ राष्ट्रिय महाधिवेशन उद्धघाटन समारोहमा बृहत सास्कृतिक कार्यक्रममा माझी जातिको प्रतिनिधित्व गर्दै माझी जातिको सस्कार सस्कृति झल्कने माझी कलाकारहरुको पनि नृत्य प्रस्तुत गरिएको थियो',
-        date:'2080 B.s'
+        type:'news',
+        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum necessitatibus vero totam porro. Dolorum labore corporis id temporibus eveniet minus dolorem molestias odio inventore eius. Amet minus commodi labore qui?',
+        date:'2080 B.s 2nd may'
     },
     {
-        id:'date-2',
-        description:'यस सस्थाले मिति २०७९ पुष २० गते मानेभञ्ज्याङ गा पा ओखलढुंगाको सहयोगमा २१ दिने माझी मातृभाषा प्रशिक्षण गरिएको थियो',
-        date:'2070 B.s'
+        type:'event',
+        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum necessitatibus vero totam porro. Dolorum labore corporis id temporibus eveniet minus dolorem',
+        date:'2070 B.s 3rd june'
     },
     {
-        id:'date-3',
-        description:'२०८० माघ २० गते माझी चलचित्र कर्मी संघ तथा महांकाल डेन्टल केयर सेन्टरको सयुक्त आयोजनामा सबै समुदायलाई समेटिने गरि निशुल्क दन्त शिविर कार्यक्रम गरिएको थियो ',
-        date:'2060 B.s'
+         type:'event',
+        description:' necessitatibus vero totam porro. Dolorum labore corporis id temporibus eveniet minus dolorem molestias odio inventore eius. Amet minus commodi',
+        date:'2060 B.s 1st june'
     },
     {
-        id:'date-4',
-        description:'यस संस्थाले २०८० फागुन १२ गते माझी समुदायको सस्कार सस्कृति झल्कने महान चाड लदि पुजा, घाट पुजा तथा  कोशी  पुजाको अवसरमा शुभकामना आदान प्रदान कार्यक्रम प्रमुख अतिथि सस्कृती पर्यटन तथा नागरिक उड्यन राज्य मन्त्रि शुशिला सिर्पाली ठकुरी ज्युको प्रमुख अतित्यथामा  नेपाल चलचित्र विकास बोर्डको हलमा सम्पन्न गरिएको थियो',
-        date:'2050 B.s'
+        type:'news',
+        description:' necessitatibus vero totam porro. Dolorum labore corporis id temporibus eveniet minus dolorem molestias odio inventore eius. Amet minus commodi necessitatibus vero totam porro. Dolorum labore corporis id temporibus eveniet minus dolorem molestias odio inventore eius. Amet minus commodi',
+        date:'2050 B.s 2nd may'
     },
     {
-        id:'date-5',
-        description:'मिति २०७९ पुष २ गते आदिवासी जनजाति chचलचित्र महासंघको पाचौ राष्ट्रिय महाधिवेशन उद्धघाटन समारोहमा बृहत सास्कृतिक कार्यक्रममा माझी जातिको प्रतिनिधित्व गर्दै माझी जातिको सस्कार सस्कृति झल्कने माझी कलाकारहरुको पनि नृत्य प्रस्तुत गरिएको थियो',
-        date:'2040 B.s'
+        type:'notice',
+        description:'necessitatibus vero totam porro.',
+        date:'2032 B.s 10th may'
     },
    
 ]
