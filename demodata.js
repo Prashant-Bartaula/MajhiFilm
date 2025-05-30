@@ -1,7 +1,7 @@
 export const data=[
     {
         type:'news',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum necessitatibus vero totam porro. Dolorum labore corporis id temporibus eveniet minus dolorem molestias odio inventore eius. Amet minus commodi labore qui?',
+        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ne labore corporis id temporibus eveniet minus dolorem molestias odio inventore eius. Amet minus commodi labore qui?',
         date:'2080 B.s 2nd may'
     },
     {
@@ -15,8 +15,13 @@ export const data=[
         date:'2060 B.s 1st june'
     },
     {
+         type:'notice',
+        description:' necessitatibus vero totam porro. Dolorum labore corporis id temporibus eveniet minus dolorem molestias odio inventore eius. Amet minus commodi',
+        date:'2060 B.s 1st june'
+    },
+    {
         type:'news',
-        description:' necessitatibus vero totam porro. Dolorum labore corporis id temporibus eveniet minus dolorem molestias odio inventore eius. Amet minus commodi necessitatibus vero totam porro. Dolorum labore corporis id temporibus eveniet minus dolorem molestias odio inventore eius. Amet minus commodi',
+        description:'  Dolorum labore corporis id temporibus eveniet minus dolorem molestias odio inventore eius. Amet minus commodi necessitatibus vero totam porro. Dolorum labore corporis id temporibus eveniet minus dolorem molestias odio inventore eius. Amet minus commodi',
         date:'2050 B.s 2nd may'
     },
     {

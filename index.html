@@ -266,7 +266,7 @@
 
       <!-- shots in nepal section  -->
       <section
-        class="px-x-small sm:px-x-medium lg:px-x-large py-y-medim max-w-[1700px] mx-auto"
+        class="relative px-x-small sm:px-x-medium lg:px-x-large py-y-medim max-w-[1700px] mx-auto w-full"
       >
         <!-- title and link  -->
         <div class="flex justify-between items-center">
@@ -289,11 +289,11 @@
 
         <!-- grid layout content -->
         <div
-          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 justify-center items-start gap-x-6 gap-y-10 mt-8"
+          class="flex gap-6 w-full overflow-scroll  mt-8"
         >
           <!-- image and description card -->
           <div
-            class="relative flex flex-col max-w-[300px] sm:w-[290px] items-center text-start"
+            class="relative shrink-0 flex flex-col max-w-[300px] sm:w-[290px] items-center text-start"
           >
             <img
               src="./assets/member-3.jpg"
@@ -310,7 +310,7 @@
           </div>
           <!-- image and description card -->
           <div
-            class="relative flex flex-col max-w-[300px] sm:w-[290px] items-center text-start"
+            class="relative shrink-0 flex flex-col max-w-[300px] sm:w-[290px] items-center text-start"
           >
             <img
               src="./assets/member-1.jpg"
@@ -327,7 +327,7 @@
           </div>
           <!-- image and description card -->
           <div
-            class="relative flex flex-col max-w-[300px] sm:w-[290px] items-center text-start"
+            class="relative shrink-0 flex flex-col max-w-[300px] sm:w-[290px] items-center text-start"
           >
             <img
               src="./assets/member-2.jpg"
@@ -344,7 +344,7 @@
           </div>
           <!-- image and description card -->
           <div
-            class="relative flex flex-col max-w-[300px] sm:w-[290px] items-center text-start"
+            class="relative shrink-0 flex flex-col max-w-[300px] sm:w-[290px] items-center text-start"
           >
             <img
               src="./assets/member-4.jpg"
@@ -361,7 +361,7 @@
           </div>
           <!-- image and description card -->
           <div
-            class="relative flex flex-col max-w-[300px] sm:w-[290px] items-center text-start"
+            class="relative shrink-0 flex flex-col max-w-[300px] sm:w-[290px] items-center text-start"
           >
             <img
               src="./assets/member-5.jpg"
@@ -521,7 +521,7 @@
             >
               News and Reports
             </h2>
-            <p class="font-body font-normal max-w-[80%] text-center">
+            <p class="font-body font-normal lg:max-w-[80%] text-center">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
               cum, asperiores quas facere officia laborum harum eos similique
               veniam velit facilis sit, temporibus adipisci minima consequuntur
@@ -532,9 +532,9 @@
 
         <!-- tabs and slider section   -->
         <div class="flex gap-5 mt-15">
-          <div class="flex gap-12">
+          <div class="flex flex-col w-full md:w-fit md:flex-row gap-12">
             <!-- tabs -->
-            <ul class="flex flex-col gap-4 text-center">
+            <ul class="flex mx-auto w-full sm:w-fit overflow-scroll  md:flex-col gap-4 text-center">
               <li
                 class="tab-item cursor-pointer hover:bg-gray-100 bg-gray-50 shadow-xl px-4 py-2 text-xl rounded-md tab-active"
                 data-category-select="all"
@@ -562,7 +562,7 @@
             </ul>
 
             <!-- news events -->
-            <div class="flex flex-col gap-8 w-fit" id="news-items-wrapper">
+            <div class="flex flex-col gap-8 max-w-[700px]" id="news-items-wrapper">
               <!-- news items -->
               
             </div>

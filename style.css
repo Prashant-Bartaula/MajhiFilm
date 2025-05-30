@@ -224,7 +224,7 @@ select {
 
 
 .tab-item.tab-active{
-  @apply bg-gray-100;
+  @apply bg-gray-200;
 }
 
 .news-item{

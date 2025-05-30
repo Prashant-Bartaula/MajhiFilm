@@ -36,46 +36,56 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // news tabs
   const tabItems = Array.from(document.querySelectorAll(".tab-item"));
-  tabItems.forEach((item) => {
-    const category = item.dataset.categorySelect;
-    data.forEach((dataItem) => {
-      if (dataItem.type === category) {
-        const div = document.createElement("div");
+  const activeTab=document.querySelector('.tab-active');
+  data.filter((dataItem) => dataItem.type === activeTab.dataset.categorySelect || activeTab.dataset.categorySelect === 'all').forEach((dataItem, index) => {
+    if(index>2){
+      return;
+    }
+    const div = document.createElement("div");
         div.classList.add("news-item");
         div.innerHTML = `<img
                   src="https://images.unsplash.com/photo-1748392242228-fe7ebd0b8a86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8"
                   alt="news-image"
-                  class="object-cover h-full max-w-[200px]"
+                  class="object-cover hidden sm:block  sm:h-full sm:max-w-[200px]"
                 />
 
                 <div class="flex flex-col gap-3 px-5 py-5">
                   <h4 class="font-body font-bold">
-                    ${dataItem.description.slice(0, 150)}
+                    ${dataItem.description.slice(0, 90)}
                   </h4>
                   <h6>${dataItem.date}</h6>
                 </div>`;
 
         document.getElementById("news-items-wrapper").appendChild(div);
-      }
-    });
+  });
 
+
+  tabItems.forEach((item) => {
+    const category = item.dataset.categorySelect;
     item.addEventListener("click", () => {
+      document.getElementById("news-items-wrapper").innerHTML = "";
       tabItems.forEach((item) => item.classList.remove("tab-active"));
       item.classList.add("tab-active");
 
+      let itemsCount=0;
       data.forEach((dataItem) => {
-      if (dataItem.type === category) {
+        console.log(itemsCount);
+        if(itemsCount>2){
+          return;
+        }
+      if (category=== "all" || dataItem.type === category) {
+        itemsCount++;
         const div = document.createElement("div");
         div.classList.add("news-item");
         div.innerHTML = `<img
                   src="https://images.unsplash.com/photo-1748392242228-fe7ebd0b8a86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8"
                   alt="news-image"
-                  class="object-cover h-full max-w-[200px]"
+                  class="object-cover hidden sm:block  sm:h-full sm:max-w-[200px]"
                 />
 
                 <div class="flex flex-col gap-3 px-5 py-5">
                   <h4 class="font-body font-bold">
-                    ${dataItem.description.slice(0, 150)}
+                    ${dataItem.description.slice(0, 90)}
                   </h4>
                   <h6>${dataItem.date}</h6>
                 </div>`;
