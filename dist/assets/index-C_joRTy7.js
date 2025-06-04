@@ -1,0 +1,23 @@
+(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))n(t);new MutationObserver(t=>{for(const e of t)if(e.type==="childList")for(const o of e.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&n(o)}).observe(document,{childList:!0,subtree:!0});function l(t){const e={};return t.integrity&&(e.integrity=t.integrity),t.referrerPolicy&&(e.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?e.credentials="include":t.crossOrigin==="anonymous"?e.credentials="omit":e.credentials="same-origin",e}function n(t){if(t.ep)return;t.ep=!0;const e=l(t);fetch(t.href,e)}})();const d=[{type:"news",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ne labore corporis id temporibus eveniet minus dolorem molestias odio inventore eius. Amet minus commodi labore qui?",date:"2080 B.s 2nd may"},{type:"event",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum necessitatibus vero totam porro. Dolorum labore corporis id temporibus eveniet minus dolorem",date:"2070 B.s 3rd june"},{type:"event",description:" necessitatibus vero totam porro. Dolorum labore corporis id temporibus eveniet minus dolorem molestias odio inventore eius. Amet minus commodi",date:"2060 B.s 1st june"},{type:"notice",description:" necessitatibus vero totam porro. Dolorum labore corporis id temporibus eveniet minus dolorem molestias odio inventore eius. Amet minus commodi",date:"2060 B.s 1st june"},{type:"news",description:"  Dolorum labore corporis id temporibus eveniet minus dolorem molestias odio inventore eius. Amet minus commodi necessitatibus vero totam porro. Dolorum labore corporis id temporibus eveniet minus dolorem molestias odio inventore eius. Amet minus commodi",date:"2050 B.s 2nd may"},{type:"notice",description:"necessitatibus vero totam porro.",date:"2032 B.s 10th may"}];document.addEventListener("DOMContentLoaded",()=>{const s=document.getElementById("navbar-item-wrapper");document.getElementById("hamburger").addEventListener("click",()=>{s.classList.toggle("h-0"),s.classList.toggle("h-[280px]")}),document.documentElement.addEventListener("click",e=>{e.target.closest("#hamburger")||(s.classList.add("h-0"),s.classList.remove("h-[280px]"))});function l(){Array.from(document.querySelectorAll(".scroller_inner")).forEach(o=>{Array.from(o.children).forEach(r=>{const c=r.cloneNode(!0);o.appendChild(c)})})}l();const n=Array.from(document.querySelectorAll(".tab-item")),t=document.querySelector(".tab-active");d.filter(e=>e.type===t.dataset.categorySelect||t.dataset.categorySelect==="all").forEach((e,o)=>{if(o>2)return;const i=document.createElement("div");i.classList.add("news-item"),i.innerHTML=`<img
+                  src="https://images.unsplash.com/photo-1748392242228-fe7ebd0b8a86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8"
+                  alt="news-image"
+                  class="object-cover hidden sm:block  sm:h-full sm:max-w-[200px]"
+                />
+
+                <div class="flex flex-col gap-3 px-5 py-5">
+                  <h4 class="font-body font-bold">
+                    ${e.description.slice(0,90)}
+                  </h4>
+                  <h6>${e.date}</h6>
+                </div>`,document.getElementById("news-items-wrapper").appendChild(i)}),n.forEach(e=>{const o=e.dataset.categorySelect;e.addEventListener("click",()=>{document.getElementById("news-items-wrapper").innerHTML="",n.forEach(r=>r.classList.remove("tab-active")),e.classList.add("tab-active");let i=0;d.forEach(r=>{if(console.log(i),!(i>2)&&(o==="all"||r.type===o)){i++;const c=document.createElement("div");c.classList.add("news-item"),c.innerHTML=`<img
+                  src="https://images.unsplash.com/photo-1748392242228-fe7ebd0b8a86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8"
+                  alt="news-image"
+                  class="object-cover hidden sm:block  sm:h-full sm:max-w-[200px]"
+                />
+
+                <div class="flex flex-col gap-3 px-5 py-5">
+                  <h4 class="font-body font-bold">
+                    ${r.description.slice(0,90)}
+                  </h4>
+                  <h6>${r.date}</h6>
+                </div>`,document.getElementById("news-items-wrapper").appendChild(c)}})})})});new Swiper(".mySwiper",{spaceBetween:30,centeredSlides:!0,autoplay:{delay:2500,disableOnInteraction:!1},pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
