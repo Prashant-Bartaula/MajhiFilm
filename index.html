@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Majhi Film</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" crossorigin src="/assets/index-C_joRTy7.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B56ThdtM.css">
+  </head>
+  <body>
+    <header class="px-5 md:px-8 py-2">
+      <!-- logo and search  -->
+      <div
+        class="relative flex justify-start gap-7 sm:gap-10 flex-wrap sm:justify-center items-center"
+      >
+        <!-- absolute positioned media icons -->
+        <div
+          class="hidden md:flex absolute top-1/2 -translate-y-1/2 left-0 flex-col gap-3"
+        >
+          <h5 class="text-secondary text-[16px] text-center">Social media</h5>
+          <div class="flex gap-5">
+            <button>
+              <a href="https://www.facebook.com/majhi.film/"
+                ><img
+                  src="/assets/facebook-ejnf6rkB.png"
+                  alt="facebook-logo"
+                  class="h-10 w-10"
+              /></a>
+            </button>
+            <button>
+              <a href="https://www.instagram.com/majhi.film/"
+                ><img
+                  src="/assets/instagram-DmYWk5ch.png"
+                  alt="instagram-logo"
+                  class="h-10 w-10"
+              /></a>
+            </button>
+            <button>
+              <a href="https://www.facebook.com/majhi.film/"
+                ><img
+                  src="/assets/twitter-DT4_rhA5.png"
+                  alt="twitter-logo"
+                  class="h-10 w-10"
+              /></a>
+            </button>
+            <button>
+              <a href="https://www.facebook.com/majhi.film/"
+                ><img
+                  src="/assets/youtube-BFbAs8YB.png"
+                  alt="youtube-logo"
+                  class="h-10 w-10"
+              /></a>
+            </button>
+          </div>
+        </div>
+
+        <!-- logo wrapper  -->
+        <div class="relative w-auto mx-auto h-[150px]">
+          <a href="/">
+            <img
+              src="/assets/majhi-film-CG1gQyW3.webp"
+              alt="logo_image"
+              class="h-full object-cover scale-125"
+            />
+          </a>
+        </div>
+
+        <!-- flag wrapper -->
+        <div
+          class="hidden md:flex absolute top-1/2 -translate-y-1/2 right-0 flex-center"
+        >
+          <img
+            src="/assets/nepal_flag-CBVq6uIe.gif"
+            alt="logo_image"
+            class="h-15 object-cover scale-150"
+          />
+        </div>
+      </div>
+
+      <!-- navbar  -->
+      <nav
+        class="px-3 my-9 md:px-5 py-3 bg-blue-100 text-blue-400 rounded-lg font-[500] text-xl overflow-hidden md:overflow-visible"
+        id="navbar"
+      >
+        <!-- hamburger  -->
+        <div class="md:hidden flex justify-end">
+          <button
+            id="hamburger-no-style"
+            class="cursor-pointer shadow-none! text-white"
+          >
+            <img
+              src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Uploaded%20to:%20SVG%20Repo,%20www.svgrepo.com,%20Generator:%20SVG%20Repo%20Mixer%20Tools%20--%3e%3csvg%20width='800px'%20height='800px'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4%207L7%207M20%207L11%207'%20stroke='%231C274C'%20stroke-width='1.5'%20stroke-linecap='round'/%3e%3cpath%20d='M20%2017H17M4%2017L13%2017'%20stroke='%231C274C'%20stroke-width='1.5'%20stroke-linecap='round'/%3e%3cpath%20d='M4%2012H7L20%2012'%20stroke='%231C274C'%20stroke-width='1.5'%20stroke-linecap='round'/%3e%3c/svg%3e"
+              alt="hamburger"
+              class="w-8 h-8"
+              id="hamburger"
+            />
+          </button>
+        </div>
+
+        <ul
+          class="h-0 md:h-fit flex flex-col items-start md:flex-row md:items-center gap-7 transition-all duration-300 ease-linear text-blue-600 font-semibold text-nav-large"
+          id="navbar-item-wrapper"
+        >
+          <li
+            class="custom-nav-links cursor-pointer relative px-2 hover:text-blue-700 transition-all duration-150 ease-in mt-5 md:mt-0"
+          >
+            <a href="/">Home</a>
+          </li>
+          <li
+            class="custom-nav-links cursor-pointer relative px-2 hover:text-blue-700 transition-all duration-150 ease-in"
+          >
+            <h2 class="text-nav-large">About us <span>&#9660;</span></h2>
+            <div
+              class="custom-dropdown hidden transition-all duration-150 ease-in-out absolute top-3 left-25 md:top-7 rounded-xl md:left-0 bg-blue-200 z-10 overflow-hidden"
+            >
+              <ul class="flex flex-col gap-3 text-nowrap text-blue-700 py-2">
+                <li class="cursor-pointer relative px-3 py-1">
+                  <a href="/about/introduction">Introduction</a>
+                </li>
+                <li class="cursor-pointer relative px-3 py-1">
+                  <a href="/about/exmembers">Ex. members</a>
+                </li>
+                <li class="cursor-pointer relative px-3 py-1">
+                  <a href="/about/exchairpersons">Ex. charipersons</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            class="custom-nav-links cursor-pointer relative px-2 hover:text-blue-700 transition-all duration-150 ease-in"
+          >
+            <h2 class="text-nav-large">Resources <span>&#9660;</span></h2>
+            <div
+              class="custom-dropdown hidden transition-all duration-150 ease-in-out absolute top-3 left-25 md:top-6 rounded-xl md:left-0 bg-blue-200 z-10 overflow-hidden"
+            >
+              <ul class="flex flex-col gap-3 text-nowrap text-blue-700 py-2">
+                <li class="cursor-pointer relative px-3 py-1">
+                  <a href="#">Libraries</a>
+                </li>
+                <li class="cursor-pointer relative px-3 py-1">
+                  <a href="#">Publications</a>
+                </li>
+                <li class="cursor-pointer relative px-3 py-1">
+                  <a href="/article">Articles</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            class="custom-nav-links cursor-pointer relative px-2 hover:text-blue-500 transition-all duration-150 ease-in"
+          >
+            <a href="/">Contact</a>
+          </li>
+          <li
+            class="custom-nav-links cursor-pointer relative px-2 hover:text-blue-500 transition-all duration-150 ease-in"
+          >
+            <a href="/">Donations</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- marquee container -->
+    <div
+      class="mx-5 md:mx-8 py-3 rounded-md relative overflow-hidden whitespace-nowrap -mt-5 mb-7 bg-blue-100"
+    >
+      <marquee
+        behavior="scroll"
+        direction="left"
+        class="text-red-500 text-[18px] font-body"
+        >🚨 New Notice: Admissions open for 2025 | Apply Now!</marquee
+      >
+      <button
+        class="absolute left-0 top-0 h-full px-4 py-2 bg-blue-500 text-white font-bold! text-lg!"
+      >
+        Recent notice
+      </button>
+    </div>
+
+    <main>
+      <!-- hero section  -->
+      <section
+        class="relative h-fit w-full sm:max-w-[1700px] mx-auto px-x-small sm:px-x-medium lg:px-x-large"
+      >
+        <iframe
+          class="w-full h-[400px] sm:h-[500px] xl:h-[600px]"
+          src="https://www.youtube.com/embed/XboB9-f_dlA?controls=1"
+        ></iframe>
+      </section>
+
+      <!--  team section -->
+      <section
+        class="px-x-small sm:px-x-medium lg:px-x-large py-y-medim max-w-[1700px] mx-auto"
+      >
+        <!-- team members wrapper  -->
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 justify-center items-start gap-x-6 gap-y-7"
+        >
+          <!-- image card  -->
+          <div class="image-card">
+            <img
+              src="/assets/member-1-ACNOkJha.jpg"
+              alt="member-1"
+              class="max-h-[250px] aspect-square object-cover object-top rounded-md"
+            />
+            <h4 class="text-center text-blue-400 font-body">Pramila Majhi</h4>
+            <p class="text-center text-secondary text-sm">sadasya</p>
+          </div>
+          <!-- image card  -->
+          <div class="image-card">
+            <img
+              src="/assets/member-2-KmYruWSU.jpg"
+              alt="member-1"
+              class="max-h-[250px] aspect-square object-cover object-top rounded-md"
+            />
+            <h4 class="text-center text-blue-400 font-body">
+              Bibash kumar majhi
+            </h4>
+            <p class="text-center text-secondary text-sm">Mahasachib</p>
+          </div>
+          <!-- image card  -->
+          <div class="image-card">
+            <img
+              src="/assets/member-3-C3GFgxuT.jpg"
+              alt="member-1"
+              class="max-h-[250px] aspect-square object-cover object-top rounded-md"
+            />
+            <h4 class="text-center text-blue-400 font-body">Kumar majhi</h4>
+            <p class="text-center text-secondary text-sm">Kosadhyakchya</p>
+          </div>
+          <!-- image card  -->
+          <div class="image-card">
+            <img
+              src="/assets/member-4-D4qubYWJ.jpg"
+              alt="member-1"
+              class="max-h-[250px] aspect-square object-cover object-top rounded-md"
+            />
+            <h4 class="text-center text-blue-400 font-body">Pramila majhi</h4>
+            <p class="text-center text-secondary text-sm">sadasya</p>
+          </div>
+          <!-- image card  -->
+          <div class="image-card">
+            <img
+              src="/assets/member-5-BOgnwtdF.jpg"
+              alt="member-1"
+              class="max-h-[250px] aspect-square object-cover object-top rounded-md"
+            />
+            <h4 class="text-center text-blue-400 font-body">sanjita majhi</h4>
+            <p class="text-center text-secondary text-sm">sadasya</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- about and achievement section  -->
+      <section
+        class="px-x-small sm:px-x-medium lg:px-x-large py-y-medim max-w-[1700px] mx-auto flex flex-col gap-14  lg:flex-row lg:gap-10"
+      >
+        <!-- about side  -->
+        <div class="w-full lg:flex-1/2 break-all">
+          <!-- title  -->
+          <div>
+            <h2
+              class="font-body text-center lg:text-start uppercase text-secondary font-light cursor-pointer"
+            >
+              Film Development Board
+            </h2>
+          </div>
+
+          <!-- content -->
+          <div class="space-y-5 text-gray-600 tracking-wide">
+            <!-- intro  -->
+            <h3 class="font-body font-light cursor-pointer mt-9">
+              Film Development Board (FDB) is established on 30 June 2000 by the
+              Government of Nepal according to the existed Motion Picture
+              (Production, Exhibition and Distribution) Act amended on 20th
+              November 1991.
+            </h3>
+
+            <!-- body -->
+            <h3 class="font-body font-light">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+              sapiente nisi explicabo minus itaque numquam temporibus
+              dignissimos voluptas, inventore dolor error, accusamus suscipit
+              enim velit officiis? Explicabo ex accusamus ab?Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Ipsum sapiente nisi
+              explicabo minus itaque numquam temporibus dignissimos voluptas,
+              inventore dolor error, accusamus suscipit enim velit officiis?
+              Explicabo ex accusamus ab?Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Ipsum sapiente nisi explicabo minus itaque
+              numquam temporibus dignissimos voluptas, inventore dolor error,
+              accusamus suscipit enim velit officiis? Explicabo ex accusamus ab?
+            </h3>
+
+            <!-- body 2 -->
+            <h3 class="font-body font-light">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe eius, quidem ex harum delectus dolorum perspiciatis at? Magnam modi laudantium ullam animi. Sapiente sint eos praesentium facere, consectetur ipsum. Error.amet consectetur adipisicing elit. Saepe eius, quidem ex harum delectus dolorum perspiciatis at? Magnam modi laudantium ullam animi. Sapiente sint eos praesentium facere, consectetur ipsum. Error.
+            </h3>
+
+            <!-- button read more -->
+            <button class="text-blue-400"><a href="#">Read more</a></button>
+          </div>
+        </div>
+
+        <!-- achievement part  -->
+        <div class="w-full lg:flex-1/2">
+          <!-- title  -->
+          <div>
+            <h2
+              class="font-body text-center lg:text-start uppercase text-secondary font-light cursor-pointer"
+            >
+              Achievements
+            </h2>
+          </div>
+
+          <!-- achievements  -->
+          <div class="flex flex-col gap-5 mt-8 break-all font-[Noto+Sans+Devanagari]">
+            <!-- achievement card -->
+            <div class="flex gap-3 py-3 border-b border-gray-200">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1746115779411-2788fe004f5f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+                alt="achievement-image"
+                class="object-cover h-auto max-w-[150px]"
+              />
+
+              <!-- content achievement -->
+              <div class="flex flex-col gap-3">
+                <!-- date -->
+                <p class="font-body text-secondary text-sm">2024 may 3</p>
+
+                <!-- content  -->
+                <h4>
+                  मिति २०७९ पुष २ गते आदिवासी जनजाति chचलचित्र महासंघको पाचौ
+                  राष्ट्रिय महाधिवेशन उद्धघाटन समारोहमा बृहत सास्कृतिक
+                  कार्यक्रममा माझी जातिको प्रतिनिधित्व गर्दै माझी जातिको सस्कार
+                  सस्कृति झल्कने माझी कलाकारहरुको पनि नृत्य प्रस्तुत गरिएको थियो
+                </h4>
+              </div>
+            </div>
+            <!-- achievement card -->
+            <div class="flex gap-3 py-3 border-b border-gray-200">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1748882647770-63f297e4277a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D"
+                alt="achievement-image"
+                class="object-cover h-auto max-w-[150px]"
+              />
+
+              <!-- content achievement -->
+              <div class="flex flex-col gap-3">
+                <!-- date -->
+                <p class="font-body text-secondary text-sm">2022 april 22</p>
+
+                <!-- content  -->
+                <h4>
+                  यस सस्थाले मिति २०७९ पुष २० गते मानेभञ्ज्याङ गा पा ओखलढुंगाको
+                  सहयोगमा २१ दिने माझी मातृभाषा प्रशिक्षण गरिएको थियो
+                </h4>
+              </div>
+            </div>
+            <!-- achievement card -->
+            <div class="flex gap-3 py-3 border-b border-gray-200">
+              <img
+                src="https://images.unsplash.com/photo-1746704948438-f3e307e1833c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
+                alt="achievement-image"
+                class="object-cover h-auto max-w-[150px]"
+              />
+
+              <!-- content achievement -->
+              <div class="flex flex-col gap-3">
+                <!-- date -->
+                <p class="font-body text-secondary text-sm">2024 Jun 3</p>
+
+                <!-- content  -->
+                <h4>
+                  २०८० जेठ १४ र १५ गते सुनसरी जिल्लाको मधुवन मा नेपाल माझी
+                  उत्थान संघ केन्द्रीय समितिको mahaadhibe महाधिवेशनमा माझी
+                  चलचित्र कर्मी संघले निशुल्क खानेपानी मिनिलर वाटर वितरण गरेको
+                  थियो
+                </h4>
+              </div>
+            </div>
+
+            <!-- load more button  -->
+            <button class="hover:text-blue-400 transition-all duration-150 ease-linear text-right">
+              <a href="#">
+                >&nbsp; View all 
+              </a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- news and events section  -->
+      <section
+        class="px-x-small sm:px-x-medium lg:px-x-large py-y-medim max-w-[1700px] mx-auto bg-[#fafafa]"
+      >
+        <!-- title and link  -->
+        <div class="flex justify-center items-center">
+          <div class="flex flex-col gap-4 items-center">
+            <h2
+              class="font-body uppercase text-secondary font-light cursor-pointer"
+            >
+              News and Reports
+            </h2>
+            <p class="font-body font-normal lg:max-w-[80%] text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
+              cum, asperiores quas facere officia laborum harum eos similique
+              veniam velit facilis sit, temporibus adipisci minima consequuntur
+              natus, magnam amet praesentium.
+            </p>
+          </div>
+        </div>
+
+        <!-- tabs and slider section   -->
+        <div class="flex flex-col gap-10 xl:flex-row xl:gap-5 mt-15">
+          <div class="flex flex-col w-full lg:flex-row gap-12">
+            <!-- tabs -->
+            <ul
+              class="flex mx-auto w-full sm:w-fit md:mx-0 overflow-scroll lg:flex-col gap-4 text-center"
+            >
+              <li
+                class="tab-item cursor-pointer hover:bg-gray-100 bg-gray-50 shadow-xl px-4 py-2 text-xl rounded-md tab-active"
+                data-category-select="all"
+              >
+                All
+              </li>
+              <li
+                class="tab-item cursor-pointer hover:bg-gray-100 bg-gray-50 shadow-xl px-4 w-fit py-2 text-xl rounded-md"
+                data-category-select="notice"
+              >
+                Notice
+              </li>
+              <li
+                class="tab-item cursor-pointer hover:bg-gray-100 bg-gray-50 shadow-xl px-4 py-2 text-xl rounded-md"
+                data-category-select="event"
+              >
+                Event
+              </li>
+              <li
+                class="tab-item cursor-pointer hover:bg-gray-100 bg-gray-50 shadow-xl px-4 py-2 text-xl rounded-md"
+                data-category-select="news"
+              >
+                News
+              </li>
+            </ul>
+
+            <!-- news events -->
+            <div
+              class="flex flex-col gap-8 xl:w-[650px]"
+              id="news-items-wrapper"
+            >
+              <!-- news items -->
+            </div>
+          </div>
+
+          <!-- slider part -->
+          <div class="relative swiper mySwiper h-[500px] xl:max-h-[400px] w-full">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="https://scontent.fktm10-1.fna.fbcdn.net/v/t15.5256-10/65686395_644785876021001_3911947893568700416_n.jpg?stp=dst-jpg_s370x247_tt6&_nc_cat=104&ccb=1-7&_nc_sid=282d23&_nc_ohc=CgGliYrWuyIQ7kNvwHV-rPF&_nc_oc=Adk7-cYnOGng_-atqYvCSdvKt6bS2vWu9yICv7PAr-2WPClQeU6yyTTS51eUspYiKwXccD1UaL27UiBksi_EdIB6&_nc_zt=23&_nc_ht=scontent.fktm10-1.fna&_nc_gid=1NxXqM4gKDYYp6stGYGZ1Q&oh=00_AfKnaM-IB6cpLNoHIDs6Ty3Rn2JD4dJw97OhcQ0mYbexuQ&oe=6841C594"
+                  alt="slider-image"
+                  class="w-full h-full object-cover object-center"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://scontent.fktm10-1.fna.fbcdn.net/v/t39.30808-6/489421422_1112763744200270_3726101083058475376_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=NKECF7hvtZQQ7kNvwG4znYb&_nc_oc=AdmkoY5Wogq5UrP4vIgTPDy7nGaXzozD5kiLfX024CHsTfCppK3mc2bglzrygphno812m9KXw7rP8hLq3pCMZrFC&_nc_zt=23&_nc_ht=scontent.fktm10-1.fna&_nc_gid=ESJOs1lXU_quc91eu9__pQ&oh=00_AfLm07J51tStdMmMym7idB0IXZzk3rrAeLDB4USZRb8DSA&oe=6841A728"
+                  alt="slider-image"
+                  class="w-full h-full object-cover object-center"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/488243083_1109715284505116_8746732136562889679_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=eeMZKNrSF94Q7kNvwFYt7on&_nc_oc=AdlONr0ve6rup9Wb69R3XPCpGxh3J4X2MzeUQM7_BlwkisrJY4WRsheVTXmCNnCtvFrFYI-FZfu3842GPzgW4Ytm&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&_nc_gid=UJryozZTGpjOftjrAkK33Q&oh=00_AfKGBat8IX_Yk4Rj1iDo0pNKW3xSJQdXpWUWi9Gm1s1gCQ&oe=684199AE"
+                  alt="slider-image"
+                  class="w-full h-full object-cover object-center"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://scontent.fktm10-1.fna.fbcdn.net/v/t15.5256-10/65686395_644785876021001_3911947893568700416_n.jpg?stp=dst-jpg_s370x247_tt6&_nc_cat=104&ccb=1-7&_nc_sid=282d23&_nc_ohc=CgGliYrWuyIQ7kNvwHV-rPF&_nc_oc=Adk7-cYnOGng_-atqYvCSdvKt6bS2vWu9yICv7PAr-2WPClQeU6yyTTS51eUspYiKwXccD1UaL27UiBksi_EdIB6&_nc_zt=23&_nc_ht=scontent.fktm10-1.fna&_nc_gid=1NxXqM4gKDYYp6stGYGZ1Q&oh=00_AfKnaM-IB6cpLNoHIDs6Ty3Rn2JD4dJw97OhcQ0mYbexuQ&oe=6841C594"
+                  alt="slider-image"
+                  class="w-full h-full object-cover object-center"
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- shots in nepal section  -->
+      <section
+        class="relative px-x-small sm:px-x-medium lg:px-x-large py-y-medim max-w-[1700px] mx-auto w-full"
+      >
+        <!-- title and link  -->
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <h2
+              class="font-body uppercase text-secondary font-light cursor-pointer"
+            >
+              Shots in Nepal
+            </h2>
+          </div>
+
+          <div class="inline-block">
+            <a
+              class="cursor-pointer font-semibold text-lg transition duration-200 ease-linear hover:text-blue-400"
+              href="#"
+              >>&nbsp;&nbsp;View all</a
+            >
+          </div>
+        </div>
+
+        <!-- grid layout content -->
+        <div class="flex gap-6 w-full overflow-scroll mt-8">
+          <!-- image and description card -->
+          <div
+            class="relative shrink-0 flex flex-col max-w-[300px] sm:w-[290px] items-center text-start"
+          >
+            <img
+              src="https://film.gov.np/media/location/Kanchenjunga__Giriraj_Banskota_-_Waterfall.jpg"
+              alt="shots-1"
+              class="h-full max-h-[250px] w-full object-cover object-center"
+            />
+            <div
+              class="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent w-full h-[80px]"
+            >
+              <h3 class="text-primary text-center mt-5 font-body font-bold">
+                Kanchenjunga
+              </h3>
+            </div>
+          </div>
+          <!-- image and description card -->
+          <div
+            class="relative shrink-0 flex flex-col max-w-[300px] sm:w-[290px] items-center text-start"
+          >
+            <img
+              src="https://film.gov.np/media/location/Limi_Valley__Amrit_Bhadgaonle_-_Limi_valley.jpg"
+              alt="shots-1"
+              class="h-full max-h-[250px] w-full object-cover object-center"
+            />
+            <div
+              class="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent w-full h-[80px]"
+            >
+              <h3 class="text-primary text-center mt-5 font-body font-bold">
+                Limi valley
+              </h3>
+            </div>
+          </div>
+          <!-- image and description card -->
+          <div
+            class="relative shrink-0 flex flex-col max-w-[300px] sm:w-[290px] items-center text-start"
+          >
+            <img
+              src="https://film.gov.np/media/location/Manaslu_region__Amrit_Bhadgaonle__Manaslu_1.jpg"
+              alt="shots-1"
+              class="h-full max-h-[250px] w-full object-cover object-center"
+            />
+            <div
+              class="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent w-full h-[80px]"
+            >
+              <h3 class="text-primary text-center mt-5 font-body font-bold">
+                Manaslu
+              </h3>
+            </div>
+          </div>
+          <!-- image and description card -->
+          <div
+            class="relative shrink-0 flex flex-col max-w-[300px] sm:w-[290px] items-center text-start"
+          >
+            <img
+              src="https://film.gov.np/media/location/Mustang__Amrit_Bhadgaonle_-_Nilgiri_Himal_View_from_Kagbeni_Mustang.jpg"
+              alt="shots-1"
+              class="h-full max-h-[250px] w-full object-cover object-center"
+            />
+            <div
+              class="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent w-full h-[80px]"
+            >
+              <h3 class="text-primary text-center mt-5 font-body font-bold">
+                Mustang
+              </h3>
+            </div>
+          </div>
+          <!-- image and description card -->
+          <div
+            class="relative shrink-0 flex flex-col max-w-[300px] sm:w-[290px] items-center text-start"
+          >
+            <img
+              src="https://film.gov.np/media/location/Beni__Amrit_Bhadgaonle_-_Beni_Bazar.jpg"
+              alt="shots-1"
+              class="h-full max-h-[250px] w-full object-cover object-center"
+            />
+            <div
+              class="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent w-full h-[80px]"
+            >
+              <h3 class="text-primary text-center mt-5 font-body font-bold">
+                Beni
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section  -->
+      <section
+        class="px-x-small sm:px-x-medium lg:px-x-large py-y-medim max-w-[1700px] mx-auto"
+      >
+        <!-- title and link  -->
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <h2
+              class="font-body uppercase text-secondary font-light cursor-pointer"
+            >
+              Gallery
+            </h2>
+          </div>
+
+          <div class="inline-block">
+            <a
+              class="cursor-pointer font-semibold text-lg transition duration-200 ease-linear hover:text-blue-400"
+              href="#"
+              >>&nbsp;&nbsp;View all</a
+            >
+          </div>
+        </div>
+
+        <!-- infinte gallery slider  -->
+        <div
+          class="mt-10 scroller overflow-hidden max-w-[1700px] mx-auto"
+          data-animated="true"
+          data-direction="left"
+        >
+          <ul
+            class="scroller_inner flex flex-nowrap gap-4 w-max"
+            data-speed="slow"
+          >
+            <li class="scroll-item cursor-pointer flex flex-col gap-3">
+              <a href="#"
+                ><img
+                  src="/assets/member-2-KmYruWSU.jpg"
+                  alt="fim-image"
+                  class="object-cover h-[300px] w-[350px] rounded-sm"
+              /></a>
+            </li>
+            <li class="scroll-item cursor-pointer flex flex-col gap-3">
+              <a href="#"
+                ><img
+                  src="/assets/member-4-D4qubYWJ.jpg"
+                  alt="fim-image"
+                  class="object-cover h-[300px] w-[350px] rounded-sm"
+              /></a>
+            </li>
+            <li class="scroll-item cursor-pointer flex flex-col gap-3">
+              <a href="#"
+                ><img
+                  src="/assets/member-3-C3GFgxuT.jpg"
+                  alt="fim-image"
+                  class="object-cover h-[300px] w-[350px] rounded-sm"
+              /></a>
+            </li>
+            <li class="scroll-item cursor-pointer flex flex-col gap-3">
+              <a href="#"
+                ><img
+                  src="/assets/member-1-ACNOkJha.jpg"
+                  alt="fim-image"
+                  class="object-cover h-[300px] w-[350px] rounded-sm"
+              /></a>
+            </li>
+            <li class="scroll-item cursor-pointer flex flex-col gap-3">
+              <a href="#"
+                ><img
+                  src="/assets/member-5-BOgnwtdF.jpg"
+                  alt="fim-image"
+                  class="object-cover h-[300px] w-[350px] rounded-sm"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- infinte gallery slider right  -->
+        <div
+          class="mt-5 scroller overflow-hidden max-w-[1700px] mx-auto"
+          data-animated="true"
+          data-direction="right"
+        >
+          <ul
+            class="scroller_inner flex flex-nowrap gap-4 w-max"
+            data-speed="slow"
+          >
+            <li class="scroll-item cursor-pointer flex flex-col gap-3">
+              <a href="#"
+                ><img
+                  src="/assets/member-5-BOgnwtdF.jpg"
+                  alt="fim-image"
+                  class="object-cover h-[300px] w-[350px] rounded-sm"
+              /></a>
+            </li>
+            <li class="scroll-item cursor-pointer flex flex-col gap-3">
+              <a href="#"
+                ><img
+                  src="/assets/member-2-KmYruWSU.jpg"
+                  alt="fim-image"
+                  class="object-cover h-[300px] w-[350px] rounded-sm"
+              /></a>
+            </li>
+            <li class="scroll-item cursor-pointer flex flex-col gap-3">
+              <a href="#"
+                ><img
+                  src="/assets/member-3-C3GFgxuT.jpg"
+                  alt="fim-image"
+                  class="object-cover h-[300px] w-[350px] rounded-sm"
+              /></a>
+            </li>
+            <li class="scroll-item cursor-pointer flex flex-col gap-3">
+              <a href="#"
+                ><img
+                  src="/assets/member-1-ACNOkJha.jpg"
+                  alt="fim-image"
+                  class="object-cover h-[300px] w-[350px] rounded-sm"
+              /></a>
+            </li>
+            <li class="scroll-item cursor-pointer flex flex-col gap-3">
+              <a href="#"
+                ><img
+                  src="/assets/member-4-D4qubYWJ.jpg"
+                  alt="fim-image"
+                  class="object-cover h-[300px] w-[350px] rounded-sm"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Footer  -->
+       <footer class="px-5 lg:px-20 py-15 bg-gray-100 flex justify-evenly gap-14 flex-wrap  border-t border-gray-200">
+    <!-- logo wrapper -->
+    <div class="flex flex-col gap-4 w-fit
+    ">
+        <img src="/assets/majhi-film-CG1gQyW3.webp" alt="logo" class=" h-[200px] w-auto object-contain">
+        <p class="text-center text-gray-500">Copyright &copy; 2023 All rights reserved Majhi Film Makes Association</p>
+    </div>
+
+    <div class="flex flex-wrap gap-14">
+        <div class="flex flex-col gap-4">
+            <h1 class="text-2xl font-normal">About us</h1>
+            <ul class="text-gray-500 flex flex-col gap-2">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+    
+        <div class="flex flex-col gap-4">
+            <h1 class="text-2xl font-normal">Resources</h1>
+            <ul class="text-gray-500 flex flex-col gap-2">
+                <li><a href="#">Libraries</a></li>
+                <li><a href="#">Publications</a></li>
+                <li><a href="#">Articles</a></li>
+            </ul>
+        </div>
+        <div class="flex flex-col gap-4">
+            <h1 class="text-2xl font-normal">Others</h1>
+            <ul class="text-gray-500 flex flex-col gap-2">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Donations</a></li>
+            </ul>
+    
+        </div>
+    </div>
+</footer>
+    </main>
+
+  </body>
+</html>
