@@ -107,7 +107,7 @@
         </div>
 
         <ul
-          class="h-0 md:h-fit  flex flex-col items-start md:flex-row md:items-center gap-7 transition-all duration-300 ease-linear text-blue-600 font-semibold text-nav-large overflow-scroll"
+          class="h-0 md:h-fit  flex flex-col items-start md:flex-row md:items-center gap-7 transition-all duration-300 ease-linear text-blue-600 font-semibold text-nav-large overflow-scroll md:overflow-visible"
           id="navbar-item-wrapper"
         >
           <li
@@ -116,41 +116,41 @@
             <a href="/">Home</a>
           </li>
           <li
-            class="custom-nav-links md:py-3 cursor-pointer relative px-2 hover:text-blue-700 transition-all duration-150 ease-in"
+            class="custom-nav-links  md:py-3 cursor-pointer relative px-2 hover:text-blue-700 transition-all duration-150 ease-in"
           >
-            <h2 class="text-nav-large">About us <span>&#9660;</span></h2>
+            <a href="#" class="text-nav-large dropdown-button">About us <span>&#9660;</span></a>
             <div
               class="custom-dropdown hidden transition-all duration-150 ease-in-out absolute left-25  md:top-13 rounded-xl md:left-0 bg-blue-200 z-10 overflow-hidden"
             >
               <ul class="flex flex-col gap-3 text-nowrap text-blue-700 py-2">
-                <li class="cursor-pointer relative px-3 py-1">
-                  <a href="#">Introduction</a>
+                <li class="cursor-pointer relative px-3 py-1 dropdown-item">
+                  <a href="/">Introduction</a>
                 </li>
-                <li class="cursor-pointer relative px-3 py-1">
+                <li class="cursor-pointer relative px-3 py-1 dropdown-item">
                   <a href="#">Ex. members</a>
                 </li>
-                <li class="cursor-pointer relative px-3 py-1">
+                <li class="cursor-pointer relative px-3 py-1 dropdown-item">
                   <a href="#">Ex. charipersons</a>
                 </li>
               </ul>
             </div>
           </li>
           <li
-            class="custom-nav-links md:py-3 cursor-pointer relative px-2 hover:text-blue-700 transition-all duration-150 ease-in"
+            class="custom-nav-links  md:py-3 cursor-pointer relative px-2 hover:text-blue-700 transition-all duration-150 ease-in"
           >
-            <h2 class="text-nav-large">Resources <span>&#9660;</span></h2>
+            <a href="#" class="text-nav-large dropdown-button">Resources <span>&#9660;</span></a>
             <div
               class="custom-dropdown hidden transition-all duration-150 ease-in-out absolute left-25 md:top-13 rounded-xl md:left-0 bg-blue-200 z-10 overflow-hidden"
             >
               <ul class="flex flex-col gap-3 text-nowrap text-blue-700 py-2">
-                <li class="cursor-pointer relative px-3 py-1">
+                <li class="cursor-pointer relative px-3 py-1 dropdown-item">
                   <a href="#">Libraries</a>
                 </li>
-                <li class="cursor-pointer relative px-3 py-1">
+                <li class="cursor-pointer relative px-3 py-1 dropdown-item">
                   <a href="#">Publications</a>
                 </li>
-                <li class="cursor-pointer relative px-3 py-1">
-                  <a href="/article">Articles</a>
+                <li class="cursor-pointer relative px-3 py-1 dropdown-item">
+                  <a href="#">Articles</a>
                 </li>
               </ul>
             </div>

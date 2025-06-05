@@ -9,12 +9,36 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.documentElement.addEventListener("click", (e) => {
-    if (!e.target.closest("#hamburger")) {
-          navbarWrapper.classList.toggle("nav-show");
+    console.log(e.target.classList.contains("dropdown-button"));
+    if (
+      !e.target.closest("#hamburger") &&
+      !e.target.classList.contains("dropdown-button")
+    ) {
+      navbarWrapper.classList.remove("nav-show");
     }
     //or
     // !e.target.closest('#hamburger')// this will return true or false as per the element is sibling or child of #hamburger
   });
+
+  const dropdownWrapper = Array.from(
+    document.querySelectorAll(".dropdown-button")
+  );
+  dropdownWrapper.forEach((dropdownItem) => {
+    dropdownItem.addEventListener("click", () => {
+      const dropdown =
+        dropdownItem.parentElement.querySelector(".custom-dropdown");
+      const dropdownLinks = Array.from(
+        document.querySelectorAll(".dropdown-item")
+      );
+      dropdown.classList.toggle("hidden");
+      dropdownLinks.forEach((dropdownLink) => {
+        dropdownLink.addEventListener("click", () => {
+          dropdown.classList.add("hidden");
+        });
+      });
+    });
+  });
+
 
   //shots in nepal aniamtion js
   function animation() {
@@ -34,14 +58,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // news tabs
   const tabItems = Array.from(document.querySelectorAll(".tab-item"));
-  const activeTab=document.querySelector('.tab-active');
-  data.filter((dataItem) => dataItem.type === activeTab.dataset.categorySelect || activeTab.dataset.categorySelect === 'all').forEach((dataItem, index) => {
-    if(index>2){
-      return;
-    }
-    const div = document.createElement("div");
-        div.classList.add("news-item");
-        div.innerHTML = `<img
+  const activeTab = document.querySelector(".tab-active");
+  data
+    .filter(
+      (dataItem) =>
+        dataItem.type === activeTab.dataset.categorySelect ||
+        activeTab.dataset.categorySelect === "all"
+    )
+    .forEach((dataItem, index) => {
+      if (index > 2) {
+        return;
+      }
+      const div = document.createElement("div");
+      div.classList.add("news-item");
+      div.innerHTML = `<img
                   src="https://images.unsplash.com/photo-1748392242228-fe7ebd0b8a86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8"
                   alt="news-image"
                   class="object-cover hidden sm:block  sm:h-full sm:max-w-[200px]"
@@ -54,9 +84,8 @@ document.addEventListener("DOMContentLoaded", () => {
                   <h6>${dataItem.date}</h6>
                 </div>`;
 
-        document.getElementById("news-items-wrapper").appendChild(div);
-  });
-
+      document.getElementById("news-items-wrapper").appendChild(div);
+    });
 
   tabItems.forEach((item) => {
     const category = item.dataset.categorySelect;
@@ -65,17 +94,17 @@ document.addEventListener("DOMContentLoaded", () => {
       tabItems.forEach((item) => item.classList.remove("tab-active"));
       item.classList.add("tab-active");
 
-      let itemsCount=0;
+      let itemsCount = 0;
       data.forEach((dataItem) => {
         console.log(itemsCount);
-        if(itemsCount>2){
+        if (itemsCount > 2) {
           return;
         }
-      if (category=== "all" || dataItem.type === category) {
-        itemsCount++;
-        const div = document.createElement("div");
-        div.classList.add("news-item");
-        div.innerHTML = `<img
+        if (category === "all" || dataItem.type === category) {
+          itemsCount++;
+          const div = document.createElement("div");
+          div.classList.add("news-item");
+          div.innerHTML = `<img
                   src="https://images.unsplash.com/photo-1748392242228-fe7ebd0b8a86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8"
                   alt="news-image"
                   class="object-cover hidden sm:block  sm:h-full sm:max-w-[200px]"
@@ -88,31 +117,30 @@ document.addEventListener("DOMContentLoaded", () => {
                   <h6>${dataItem.date}</h6>
                 </div>`;
 
-        document.getElementById("news-items-wrapper").appendChild(div);
-      }
-    });
+          document.getElementById("news-items-wrapper").appendChild(div);
+        }
+      });
     });
   });
 });
 
-
-// swiper js 
- var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+// swiper js
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 // const header=document.getElementById('header');
 
