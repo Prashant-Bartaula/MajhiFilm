@@ -88,59 +88,59 @@
 
       <!-- navbar  -->
       <nav
-        class="px-3 my-9 md:px-5 py-3 bg-blue-100 text-blue-400 rounded-lg font-[500] text-xl overflow-hidden md:overflow-visible"
+        class="px-3 my-9 md:px-5 py-3 md:py-0 bg-blue-100 text-blue-400 rounded-lg font-[500] text-xl overflow-hidden md:overflow-visible"
         id="navbar"
       >
         <!-- hamburger  -->
         <div class="md:hidden flex justify-end">
           <button
             id="hamburger-no-style"
-            class="cursor-pointer shadow-none! text-white"
+            class="cursor-pointer shadow-none text-white"
           >
             <img
               src="./assets/hamburger.svg"
               alt="hamburger"
-              class="w-8 h-8"
+              class="w-8 h-8 cursor-pointer"
               id="hamburger"
             />
           </button>
         </div>
 
         <ul
-          class="h-0 md:h-fit flex flex-col items-start md:flex-row md:items-center gap-7 transition-all duration-300 ease-linear text-blue-600 font-semibold text-nav-large"
+          class="h-0 md:h-fit  flex flex-col items-start md:flex-row md:items-center gap-7 transition-all duration-300 ease-linear text-blue-600 font-semibold text-nav-large overflow-scroll"
           id="navbar-item-wrapper"
         >
           <li
-            class="custom-nav-links cursor-pointer relative px-2 hover:text-blue-700 transition-all duration-150 ease-in mt-5 md:mt-0"
+            class="custom-nav-links md:py-3 cursor-pointer relative px-2 hover:text-blue-700 transition-all duration-150 ease-in mt-5 md:mt-0"
           >
             <a href="/">Home</a>
           </li>
           <li
-            class="custom-nav-links cursor-pointer relative px-2 hover:text-blue-700 transition-all duration-150 ease-in"
+            class="custom-nav-links md:py-3 cursor-pointer relative px-2 hover:text-blue-700 transition-all duration-150 ease-in"
           >
             <h2 class="text-nav-large">About us <span>&#9660;</span></h2>
             <div
-              class="custom-dropdown hidden transition-all duration-150 ease-in-out absolute top-3 left-25 md:top-7 rounded-xl md:left-0 bg-blue-200 z-10 overflow-hidden"
+              class="custom-dropdown hidden transition-all duration-150 ease-in-out absolute left-25  md:top-13 rounded-xl md:left-0 bg-blue-200 z-10 overflow-hidden"
             >
               <ul class="flex flex-col gap-3 text-nowrap text-blue-700 py-2">
                 <li class="cursor-pointer relative px-3 py-1">
-                  <a href="/about/introduction">Introduction</a>
+                  <a href="#">Introduction</a>
                 </li>
                 <li class="cursor-pointer relative px-3 py-1">
-                  <a href="/about/exmembers">Ex. members</a>
+                  <a href="#">Ex. members</a>
                 </li>
                 <li class="cursor-pointer relative px-3 py-1">
-                  <a href="/about/exchairpersons">Ex. charipersons</a>
+                  <a href="#">Ex. charipersons</a>
                 </li>
               </ul>
             </div>
           </li>
           <li
-            class="custom-nav-links cursor-pointer relative px-2 hover:text-blue-700 transition-all duration-150 ease-in"
+            class="custom-nav-links md:py-3 cursor-pointer relative px-2 hover:text-blue-700 transition-all duration-150 ease-in"
           >
             <h2 class="text-nav-large">Resources <span>&#9660;</span></h2>
             <div
-              class="custom-dropdown hidden transition-all duration-150 ease-in-out absolute top-3 left-25 md:top-6 rounded-xl md:left-0 bg-blue-200 z-10 overflow-hidden"
+              class="custom-dropdown hidden transition-all duration-150 ease-in-out absolute left-25 md:top-13 rounded-xl md:left-0 bg-blue-200 z-10 overflow-hidden"
             >
               <ul class="flex flex-col gap-3 text-nowrap text-blue-700 py-2">
                 <li class="cursor-pointer relative px-3 py-1">
@@ -156,12 +156,12 @@
             </div>
           </li>
           <li
-            class="custom-nav-links cursor-pointer relative px-2 hover:text-blue-500 transition-all duration-150 ease-in"
+            class="custom-nav-links md:py-3 cursor-pointer relative px-2 hover:text-blue-500 transition-all duration-150 ease-in"
           >
             <a href="/">Contact</a>
           </li>
           <li
-            class="custom-nav-links cursor-pointer relative px-2 hover:text-blue-500 transition-all duration-150 ease-in"
+            class="custom-nav-links md:py-3 cursor-pointer relative px-2 hover:text-blue-500 transition-all duration-150 ease-in"
           >
             <a href="/">Donations</a>
           </li>
